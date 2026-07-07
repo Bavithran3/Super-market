@@ -1,4 +1,4 @@
-if (localStorage.getItem("loggedIn") !== "true") {
+if (!localStorage.getItem("loggedInUser")) {
     window.location.href = "login.html";
 }
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
