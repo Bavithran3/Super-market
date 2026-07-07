@@ -6,8 +6,9 @@ function login() {
     // Admin Login
     if (username === "admin" && password === "admin123") {
 
+        localStorage.setItem("loggedIn", "true");
         localStorage.setItem("loggedInUser", "admin");
-
+        
         alert("Welcome Admin!");
 
         window.location.href = "admin.html";
@@ -25,8 +26,9 @@ function login() {
 
     if (found) {
 
+        localStorage.setItem("loggedIn", "true");
         localStorage.setItem("loggedInUser", username);
-
+        
         alert("Login Successful!");
 
         window.location.href = "index.html";
