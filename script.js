@@ -79,6 +79,8 @@ function filterProducts(category) {
 
 }
 function logout() {
+    localstorage.removeitem.
+        ("loggedIn");
     localStorage.removeItem("loggedInUser");
     localStorage.removeItem("cart");
     window.location.href = "login.html";
